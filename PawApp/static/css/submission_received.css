@@ -1,0 +1,78 @@
+/* General Body and HTML Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+    height: 100%; /* Ensure full viewport height for both HTML and body */
+}
+
+/* Body Specific Styles */
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3dfe6);
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    height: 100%; /* Full height for centering */
+}
+
+/* Centered Container */
+.container {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 500px;
+    width: 90%;
+    border: 1px solid #e0e0e0;
+}
+
+/* Icon */
+.icon {
+    font-size: 60px;
+    color: #FFA726;
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+}
+
+/* Bounce Animation for Icon */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Heading */
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #444444;
+    margin-bottom: 12px;
+}
+
+/* Paragraph Text */
+p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Back Button */
+.back-button {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to left, #ff7e5f, #feb47b);
+}

@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Us - PawDawg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PawDawg</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Content -->
+    <section class="about-header text-center text-black py-2">
+        <div class="container">
+            <h1>About PawDawg</h1>
+            <p class="lead">Our mission is to create a better world for street dogs.</p>
+        </div>
+    </section>
+    <img src="{% static "images\About_Us_image.jpg" %}"alt="About Us Image" class="img-fluid mb-3">
+    <section class="about-content py-5">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>
+                At PawDawg, we believe every street dog deserves a safe and loving environment. 
+                Our mission is to provide solutions for the challenges faced by street dogs, including lack of shelter, food, and medical care. 
+                By connecting communities, we aim to foster a world where these animals can thrive.
+            </p>
+            <h2>Our Vision</h2>
+            <p>
+                Our vision is to see a society where every street dog is given the care they deserve. 
+                We strive to create awareness about the issues faced by stray animals and mobilize efforts to ensure no dog is left behind.
+            </p>
+            <h2>What We Do</h2>
+            <ul>
+                <li>Facilitate adoptions for newborn puppies.</li>
+                <li>Provide a platform for reporting emergency rescues of injured or harmed animals.</li>
+                <li>Collect small donations to fund shelter and food facilities for street dogs.</li>
+                <li>Raise awareness about the importance of animal welfare in our communities.</li>
+            </ul>
+        </div>
+    </section>
+   
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 PawDawg. All Rights Reserved.</p>
+        <p>Follow us on:
+            <a href="https://www.facebook.com" target="_blank" class="text-white mx-1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 24px; height: 24px;">
+            </a>
+            
+            <a href="https://www.instagram.com" target="_blank" class="text-white mx-1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" style="width: 24px; height: 24px;">
+            </a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-eRcmeGSbY2G4d45qxF50OB2/6jVDRkNhHNjX5sFA/48iYYPpkOERQGe3lF44Kw8M" crossorigin="anonymous"></script>
+</body>
+</html>

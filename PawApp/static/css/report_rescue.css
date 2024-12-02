@@ -1,0 +1,100 @@
+/* General Page Styling */
+body {
+    background-image: url("../images/dogs.jpg"); /* Relative path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(0, 123, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a.navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #e3f2fd !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+}
+
+/* Main Container Styling */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title Styling */
+h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+/* Form Styling */
+form {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Input Styling */
+input[type="text"], input[type="email"], textarea, .form-control {
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, .form-control:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+button[type="submit"] {
+    background-color: #28a745; /* A friendly green */
+    color: #fff;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green for hover */
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}

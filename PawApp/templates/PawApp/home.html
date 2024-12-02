@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PawDawg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PawDawg</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-center bg-light py-5" style="background-image: url('{% static 'images/hero-background.jpg' %}'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="display-4">Welcome to PawDawg</h1>
+            <p class="lead">Making the world a better place for street dogs.</p>
+            <a href="#donate" class="btn btn-primary btn-lg">Donate Now</a>
+            <a href="{% url 'report_rescue' %}" class="btn btn-danger btn-lg">Report Rescue</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-4">About PawDawg</h2>
+            <p>PawDawg is a heartfelt initiative focused on improving the lives of street dogs by providing shelter, food, and love. Our goal is to make sure no dog is left behind, especially those struggling on the streets.</p>
+            <p>We offer adoption services, emergency rescues, and fostering programs to help street dogs. Our platform connects loving families with dogs in need of homes, giving them a safe place to live and grow. We also work hard to raise awareness about responsible pet ownership and the importance of adopting street dogs.</p>
+            <p>PawDawg provides essential support through our rescue operations. If a dog is injured, abandoned, or in danger, our team steps in to offer medical care, shelter, and rehabilitation. This is all made possible thanks to the kindness of our volunteers and supporters.</p>
+            <p>We also focus on community outreach, educating the public on animal welfare and responsible pet care. We are dedicated to making a real difference for street dogs and ensuring they get the second chance they deserve.</p>
+            <p>By supporting PawDawg, you join a community that’s actively helping street dogs. Together, we can create a world where every dog is loved and cared for. Your help allows us to continue rescuing, rehabilitating, and re-homing these amazing animals.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Features</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="{% static 'images/adoption_image.jpg' %}" alt="Adoption" class="img-fluid mb-3">
+                    <h4>Adoption Services</h4>
+                    <p>Register puppies and find loving homes.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'images/Rescue_dog_image.jpg' %}" alt="Rescue" class="img-fluid mb-3">
+                    <h4>Emergency Rescue</h4>
+                    <p>Report injured or harmed animals for immediate help.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'images/Donation_image.jpg' %}" alt="Donate" class="img-fluid mb-3">
+                    <h4>Donation Portal</h4>
+                    <p>Contribute to providing shelter and food.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Activities Section -->
+    <section id="recent" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Recent Activities</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static 'img/success1.jpg' %}" alt="Success" class="img-fluid">
+                    <p class="mt-2">Over 100 dogs rescued this month!</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'img/success2.jpg' %}" alt="Adoption" class="img-fluid">
+                    <p class="mt-2">50 puppies adopted into loving homes!</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'img/success3.jpg' %}" alt="Shelter" class="img-fluid">
+                    <p class="mt-2">New shelters built in local areas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 PawDawg. All Rights Reserved.</p>
+        <p>Follow us on:
+            <a href="https://www.facebook.com" target="_blank" class="text-white mx-1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="text-white mx-1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" style="width: 24px; height: 24px;">
+            </a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-eRcmeGSbY2G4d45qxF50OB2/6jVDRkNhHNjX5sFA/48iYYPpkOERQGe3lF44Kw8M" crossorigin="anonymous"></script>
+</body>
+</html>
